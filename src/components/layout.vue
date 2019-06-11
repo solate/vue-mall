@@ -2,7 +2,9 @@
   <div>
     <div class="header">
       <div class="header-inner">
-        <img class="header-logo" src="@/assets/logo.png">
+        <router-link :to="{path: '/'}">
+          <img class="header-logo" src="@/assets/logo.png">
+        </router-link>
         <div class="header-nav">
           <ul class="nav-list">
             <li> {{ username }}</li>
