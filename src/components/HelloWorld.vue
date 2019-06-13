@@ -1,17 +1,39 @@
 <template>
   <div class="hello">
-    {{msg}}
+    <h2>{{msg}}</h2>
+    <hr />
+    <h3>{{count}}</h3>
+    <p>
+      <button @click="increment">+</button>
+      <button @click="decrement">-</button>
+
+    </p>
   </div>
 </template>
 
 <script>
+
+import {mapGetters, mapActions} from 'vuex'
+
 export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Hello Vuex',
     }
-  }
+  },
+  computed: {
+    ...mapGetters(['count'])
+  },
+  methods:{
+    ...mapActions([
+      'increment',
+      'decrement',
+    ]),
+
+  },
+
+
 }
 </script>
 

@@ -7,6 +7,7 @@ import DetailCouPage from '@/pages/detail/count'
 import DetailForPage from '@/pages/detail/forecast'
 import DetailPubPage from '@/pages/detail/publish'
 import OrderListPage from '@/pages/orderList'
+import Hello from '@/components/HelloWorld'
 
 Vue.use(Router)
 
@@ -43,6 +44,10 @@ export default new Router({
     {
       path: '/orderList',
       component: OrderListPage
+    },
+    {
+      path: '/hello',
+      component: Hello
     },
 
   ]
