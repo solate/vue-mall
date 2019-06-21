@@ -23,7 +23,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['count'])
+    ...mapGetters(['count']) //TODO ... 扩展用算符，扩展以后就可以继续添加其他部分
   },
   methods:{
     ...mapActions([
